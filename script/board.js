@@ -1,28 +1,31 @@
-var boardmockData = {
-    posts: [
-        {
+function fakeData() {
+    var boardmockData = {
+        posts: [
+            {
 
-            user: "apple",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae?",
-            timestamp: "2020-03-25T12:42:38.000000Z",
-            likec: 9000000,
-            likes: ["uuuuu"],
+                user: "apple",
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae?",
+                timestamp: "2020-03-25T12:42:38.000000Z",
+                likec: 9000000,
+                likes: ["uuuuu"],
 
-            comment: [{
-                user: "aaa",
-                id: 111,
-                content: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purusodio,vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.Donec,lacinia congue felis in faucibus.",
-                timestamp: "2020-03-25T12:50:38.000000Z",
-                reply: [{
-                    user: "dhsuif",
-                    id: 9000,
-                    content: "mndmfsdnf",
-                    timestamp: "2020-03-25T12:55:38.000000Z",
-                }]//reply
+                comments: [{
+                    user: "aaa",
+                    id: 111,
+                    content: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purusodio,vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.Donec,lacinia congue felis in faucibus.",
+                    timestamp: "2020-03-25T12:50:38.000000Z",
+                    reply: [{
+                        user: "dhsuif",
+                        id: 9000,
+                        content: "mndmfsdnf",
+                        timestamp: "2020-03-25T12:55:38.000000Z",
+                    }]//reply
 
-            }]//comment
-        }]
-};
+                }]//comment
+            }]
+    };
+    return boardmockData;
+}//function
 
 var boardPostuser = document.querySelector(".boardPostuser");
 boardPostuser.innerText = boardmockData.posts[0].user;

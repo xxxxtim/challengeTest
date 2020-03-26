@@ -5,6 +5,7 @@ login.onclick = function () {
 
     var myHeaders = new Headers();
     myHeaders.append("Accept", "application/json");
+    // myHeaders.append("Authorization", "Bearer a73ce214dad75ea5f17ad30d3322d564e1cbb6dc366f653aebb9b033c377b9d3");
     myHeaders.append("Content-Type", "application/json");
     var raw = JSON.stringify({ "name": usrname, "password": password });
     var requestOptions = {
@@ -13,7 +14,7 @@ login.onclick = function () {
         body: raw,
         redirect: 'follow'
     };
-    fetch("http://eb483530.ngrok.io/api/login", requestOptions)
+    fetch("http://4e90e4f0.ngrok.io/api/login", requestOptions)
         .then(response => response.json())
         .then(result => {
             console.log(result);
