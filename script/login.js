@@ -14,7 +14,7 @@ login.onclick = function () {
         body: raw,
         redirect: 'follow'
     };
-    fetch("http://4e90e4f0.ngrok.io/api/login", requestOptions)
+    fetch("http://vegelephant.club/api/login", requestOptions)
         .then(response => response.json())
         .then(result => {
             console.log(result);

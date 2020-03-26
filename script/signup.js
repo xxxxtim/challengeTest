@@ -14,7 +14,7 @@ function signuplisten(event) {
         body: raw,
         redirect: 'follow'
     };
-    fetch("http://4e90e4f0.ngrok.io/api/register", requestOptions)
+    fetch("http://vegelephant.club/api/register", requestOptions)
         .then(response => response.json())
         .then(result => {
             console.log(result);

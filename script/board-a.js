@@ -126,23 +126,23 @@ function GetPosts(data) {
                         ${post.user.name}
                     </a>
                     </h1>
-                    <p class="boardPostTimestamp"></p>
+                    <p class="boardPostTimestamp">39分鐘</p>
                     <p class="boardPostContent">${post.content}</p>
                 </div>
             
                 <section class="reaction">
                     <div class="reaction_display">
-                    <div class="item">
-                        <i class="far fa-thumbs-up"></i>
-                        <span>450</span>
+                    <div class="item" >
+                        <i class="far fa-thumbs-up fa-2x"></i>
+                        <span class="boardPostTimestamp">450</span>
                     </div>
-                    <div class="item">
+                    <div class="item boardPostTimestamp" >
                         31則留言
                     </div>
                     </div>
                     <div class="reaction_input">
-                    <button type="button" class=""><i class="far fa-thumbs-up"></i>讚</button>
-                    <button type="button" class=""><i class="far fa-comment-alt"></i>留言</button>
+                    <span class="like"><i class="far fa-thumbs-up fa-2x"></i></span>
+                    <span class="like"><i class="far fa-comment-alt fa-2x"></i></span>
                     </div>
                 </section>
                 <section class="message">
@@ -162,14 +162,14 @@ function GetReplys(replies) {
         return `
         <div class="media mt-3">
             <a class="mr-3" href="#">
-                <img src="https://fakeimg.pl/64/" class="mr-3">
+                <img src="../miki.jpg"width="200" height="150" class="mr-3">
             </a>
             <div class="media-body">
-                <h5 class="mt-0">${reply.user.name}</h5>
+                <h4 class="mt-0">${reply.user.name}</h4>
                 <p class="boardReplyContent">${reply.content}</p>
 
                 <div class="require">
-                    <button class="reply">回覆</button>
+                    <i class="temp fas fa-comment-dots fa-3x"></i>
                     <div class="time boardReplyTime"></div>
                 </div>
 
@@ -189,16 +189,16 @@ function getComment(comments) {
         var Replys = GetReplys(comment.replies);
         return `
         <div class="media">
-          <img src="https://fakeimg.pl/64/" class="mr-3">
+          <img src="../fuck.jpg"width="200" height="150" class="mr-3"></img>
           <div class="media-body">
-            <h5 class="mt-0">${comment.user.name}</h5>
-            <p class="boardCommentContent">
+            <h3 class="mt-0">${comment.user.name}</h5>
+            <p class="boardCommentContent" >
             ${comment.content}
             </p>
 
             <div class="require">
-              <button class="reply">回覆</button>
-              <div class="time boardCommentTime"></div>
+            <i class="temp fas fa-comment-dots fa-4x"></i>
+            <div class="time boardCommentTime"></div>
             </div>
             ${Replys}
         `
