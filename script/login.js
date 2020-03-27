@@ -19,7 +19,7 @@ login.onclick = function () {
         .then(result => {
             console.log(result);
             document.cookie = `cookie= ${result.msg}`;
-            window.location.href = "../index.html"//跳轉頁面
+            window.location.href = "./index.html"//跳轉頁面
         }
         )
 
