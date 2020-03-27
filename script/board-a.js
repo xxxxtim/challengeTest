@@ -188,7 +188,7 @@ function getComment(comments) {
         var postCommentContent = `<p class="boardPostContent">${comment.content}</p>`
         var Replys = GetReplys(comment.replies);
         return `
-        <div class="media">
+        <div class="media mt-3">
           <img src="./fuck.jpg"width="200" height="150" class="mr-3"></img>
           <div class="media-body">
             <h3 class="mt-0">${comment.user.name}</h5>
