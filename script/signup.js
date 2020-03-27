@@ -19,7 +19,7 @@ function signuplisten(event) {
         .then(result => {
             console.log(result);
             document.cookie = `cookie= ${result.msg}`;
-            window.location.href = "../login.html"//跳轉頁面
+            window.location.href = "./login.html"//跳轉頁面
         }
         )
 
