@@ -162,7 +162,7 @@ function GetReplys(replies) {
         return `
         <div class="media mt-3">
             <a class="mr-3" href="#">
-                <img src="../miki.jpg"width="200" height="150" class="mr-3">
+                <img src="./miki.jpg"width="200" height="150" class="mr-3">
             </a>
             <div class="media-body">
                 <h4 class="mt-0">${reply.user.name}</h4>
@@ -189,7 +189,7 @@ function getComment(comments) {
         var Replys = GetReplys(comment.replies);
         return `
         <div class="media">
-          <img src="../fuck.jpg"width="200" height="150" class="mr-3"></img>
+          <img src="./fuck.jpg"width="200" height="150" class="mr-3"></img>
           <div class="media-body">
             <h3 class="mt-0">${comment.user.name}</h5>
             <p class="boardCommentContent" >
