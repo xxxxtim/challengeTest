@@ -137,7 +137,7 @@ function GetPosts(data) {
                         <span class="boardPostTimestamp">${post.like_list.length}</span>
                     </div>
                     <div class="item boardPostTimestamp" >
-                        31則留言
+                        ${post.comments.length}則留言
                     </div>
                     </div>
                     <div class="reaction_input">
