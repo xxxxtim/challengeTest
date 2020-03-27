@@ -197,11 +197,12 @@ function getComment(comments) {
             </p>
 
             <div class="require">
-            <i class="temp fas fa-comment-dots fa-4x"></i>
-            <div class="time boardCommentTime"></div>
+              <i class="temp fas fa-comment-dots fa-4x"></i>
+              <div class="time boardCommentTime"></div>
             </div>
             ${Replys}
-        `
+        </div>
+            </div>`
 
         return postCommentUsr + postCommentContent + Replys;
     }).join("");
