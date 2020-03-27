@@ -134,7 +134,7 @@ function GetPosts(data) {
                     <div class="reaction_display">
                     <div class="item" >
                         <i class="far fa-thumbs-up fa-2x"></i>
-                        <span class="boardPostTimestamp">450</span>
+                        <span class="boardPostTimestamp">${post.like_list.length}</span>
                     </div>
                     <div class="item boardPostTimestamp" >
                         31則留言
