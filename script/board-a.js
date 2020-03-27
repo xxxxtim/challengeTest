@@ -79,7 +79,7 @@ async function boardTakeData() {
     //     )
     //     .catch(error => console.log('error', error));
 
-    var response = await fetch("http://vegelephant.club/api/board", requestOptions);
+    var response = await fetch("https://vegelephant.club/api/board", requestOptions);
     var result = response.json();
     return result;
 }//function

@@ -14,7 +14,7 @@ login.onclick = function () {
         body: raw,
         redirect: 'follow'
     };
-    fetch("http://vegelephant.club/api/login", requestOptions)
+    fetch("https://vegelephant.club/api/login", requestOptions)
         .then(response => response.json())
         .then(result => {
             console.log(result);
