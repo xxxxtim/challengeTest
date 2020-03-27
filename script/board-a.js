@@ -126,7 +126,7 @@ function GetPosts(data) {
                         ${post.user.name}
                     </a>
                     </h1>
-                    <p class="boardPostTimestamp">39分鐘</p>
+                    <p class="boardPostTimestamp">${moment(post.created_at).format('llll')}</p>
                     <p class="boardPostContent">${post.content}</p>
                 </div>
             
@@ -167,6 +167,7 @@ function GetReplys(replies) {
             <div class="media-body">
                 <h4 class="mt-0">${reply.user.name}</h4>
                 <p class="boardReplyContent">${reply.content}</p>
+                <p>${moment(reply.created_at).format('llll')}</p>
 
                 <div class="require">
                     <i class="temp fas fa-comment-dots fa-3x"></i>
@@ -195,6 +196,7 @@ function getComment(comments) {
             <p class="boardCommentContent" >
             ${comment.content}
             </p>
+            <p>${moment(comment.created_at).format('llll')}</p>
 
             <div class="require">
               <i class="temp fas fa-comment-dots fa-4x"></i>
